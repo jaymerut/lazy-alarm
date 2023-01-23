@@ -14,6 +14,7 @@
 		26A88E7C297E18E9007C9C05 /* LazyAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A88E7B297E18E9007C9C05 /* LazyAlarmTests.swift */; };
 		26A88E86297E18E9007C9C05 /* LazyAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A88E85297E18E9007C9C05 /* LazyAlarmUITests.swift */; };
 		26A88E88297E18E9007C9C05 /* LazyAlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A88E87297E18E9007C9C05 /* LazyAlarmUITestsLaunchTests.swift */; };
+		26A88E96297E1A54007C9C05 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26A88E95297E1A54007C9C05 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A88E96297E1A54007C9C05 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +139,9 @@
 			dependencies = (
 			);
 			name = LazyAlarm;
+			packageProductDependencies = (
+				26A88E95297E1A54007C9C05 /* SnapKit */,
+			);
 			productName = LazyAlarm;
 			productReference = 26A88E61297E18E8007C9C05 /* LazyAlarm.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +214,9 @@
 				Base,
 			);
 			mainGroup = 26A88E58297E18E8007C9C05;
+			packageReferences = (
+				26A88E94297E1A54007C9C05 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 26A88E62297E18E8007C9C05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -580,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26A88E94297E1A54007C9C05 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26A88E95297E1A54007C9C05 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26A88E94297E1A54007C9C05 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26A88E59297E18E8007C9C05 /* Project object */;
 }
